@@ -4,12 +4,12 @@ This repository contains the websites used by NSA Assignment for group 14.
 # Setup
 You may setup git clone in directory `/var/www/` and add suitable configuration files for your web server in order for it to work. 
 
-# Apache2 Setup Tutorial (for my teammates <3)
+# Contributor Workspace Setup Tutorial
 ## Prerequisites
 This project requires Apache2 and Git. If Apache2 and Git are not installed on the computer, you can install them by running these commands:
 ```
 sudo apt install apache2
-sudo apt install Git
+sudo apt install git
 ```
 
 ## Setting up Git
@@ -58,7 +58,7 @@ In a text editor (such as nano), add this into the configuration files:
     CustomLog ${APACHE_LOG_DIR}/site1.access.log combined
 </VirtualHost>
 ```
-Remember to replace site1 with site2 for the other site. Once finished, enable the virtual hosts by creating symbolic links from the sites-available directory to the sites-enabled directory. Run the following commands to create symbolic links in the sites-enabled directory.
+Replace `<path-to-site-folder>` with the path to each site folders. Remember to replace site1 with site2 for the other site. Once finished, enable the virtual hosts by creating symbolic links from the sites-available directory to the sites-enabled directory. Run the following commands to create symbolic links in the sites-enabled directory.
 ```
 sudo a2ensite site1.nsagroup14.com.conf
 sudo a2ensite site2.nsagroup14.com.conf

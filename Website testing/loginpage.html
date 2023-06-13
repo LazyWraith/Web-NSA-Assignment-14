@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <meta charset="utf-8">
+  <script defer src="loginpage.js"></script>
+  <style>
+    .password-input {
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login Page</h1>
+  <form>
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" class="password-input" required>
+    </div>
+    <div>
+      <input onclick='login()' type="button" value="Login">
+    </div>
+  </form>
+</body>
+</html>

@@ -9,14 +9,14 @@ var matches = postData("verifytoken.php", formData);
 console.log(matches);
 if (matches == "true")
 {
-    // window.location = "landingpage.html";
+    window.location.replace("account.nsagroup14.com/landing.html");
     console.log("true");
 }
 else if (matches == "")
 {
     localStorage.setItem("token", "");
-    //window.location = "loginpage.html";
     console.log("false");
+    window.location.replace("login.nsagroup14.com");
 }
 
 function postData(url, data)

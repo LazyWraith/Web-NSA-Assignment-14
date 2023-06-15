@@ -1,7 +1,7 @@
 <?php
 
 //Establishing connection
-$connection = mysqli_connect('login.nsagroup14.com', 'user', 'PAFBAWUayq9U7oWz', 'nsa');
+$connection = mysqli_connect('192.168.14.10', 'user', 'PAFBAWUayq9U7oWz', 'nsa');
 
 if (!$connection)
 {

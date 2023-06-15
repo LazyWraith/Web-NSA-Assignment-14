@@ -19,7 +19,8 @@ function login()
     //Correct credentials: Returns link + token and redirect
     else
     {
-        window.location.replace(matches);
+        console.log(matches);
+        //window.location.replace(matches);
     }
 }
 

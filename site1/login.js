@@ -102,3 +102,23 @@ function submitForm() {
 
     }
 }
+
+// Add event listener for Enter key press
+document.addEventListener('DOMContentLoaded', function() {
+    var usernameInput = document.getElementById('username');
+    var passwordInput = document.getElementById('password');
+
+    usernameInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            passwordInput.focus();
+        }
+    });
+
+    passwordInput.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            submitForm();
+        }
+    });
+});

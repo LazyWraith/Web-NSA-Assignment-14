@@ -12,7 +12,7 @@ if (!$connection)
 $username = mysqli_real_escape_string($connection, $_POST['username']);
 $password = mysqli_real_escape_string($connection, $_POST['password']);
 
-// Hash the text using the sha256 algorithm, don't use password_hash as we cannot insert it into the database
+// Hash the text using the sha256 algorithm, for simplicity, we don't use password_hash as we cannot insert it into the database (we don't have a sign up form)
 $hashedpassword = hash('sha256', $password);
 
 // Obtaining information from database
@@ -20,7 +20,7 @@ $sql = "SELECT password FROM login WHERE username = '$username'";
 $result = mysqli_query($connection, $sql);
 $logininfos = mysqli_fetch_assoc($result);
 
-// If database query turns out to be empty
+// If database query turns out to be empty, meaning no user is found
 if(empty($logininfos))
 {
      exit();

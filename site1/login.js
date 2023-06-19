@@ -8,7 +8,8 @@ function login()
     let formData = new FormData();
     formData.append("username", username);
     formData.append("password", password);
-    var matches = postData("loginpage.php", formData);
+    // var matches = postData("loginpage.php", formData);
+    var matches = postData("test.php", formData);
 
     //Account no have (Currently on placeholder)
     if (matches == '')
@@ -55,22 +56,7 @@ function submitForm() {
 
         // Submit the form data to auth.nsa.php using AJAX or other method
         //Sending the data to PHP
-        let formData = new FormData();
-        formData.append("username", username);
-        formData.append("password", password);
-        var matches = postData("loginpage.php", formData);
-
-        //Account no have (Currently on placeholder)
-        if (matches == '')
-        {
-            console.log("account no have");
-        }
-
-        //Correct credentials: Returns link + token and redirect
-        else
-        {
-            window.location = matches;
-        }
+        login();
 
         
         // fetch('auth.nsa.php', {

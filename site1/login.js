@@ -9,7 +9,7 @@ function login()
     formData.append("username", username);
     formData.append("password", password);
     // var matches = postData("loginpage.php", formData);
-    var matches = postData("test.php", formData);
+    var matches = postData("loginpage.php", formData);
 
     //Account no have (Currently on placeholder)
     if (matches == '')

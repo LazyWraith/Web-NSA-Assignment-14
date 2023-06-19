@@ -8,7 +8,6 @@ function login()
     let formData = new FormData();
     formData.append("username", username);
     formData.append("password", password);
-    // var matches = postData("loginpage.php", formData);
     var matches = postData("loginpage.php", formData);
 
     //Account no have (Currently on placeholder)
@@ -20,8 +19,7 @@ function login()
     //Correct credentials: Returns link + token and redirect
     else
     {
-        console.log(matches);
-        //window.location.replace(matches);
+        window.location.replace(matches);
     }
 }
 
@@ -36,7 +34,6 @@ function postData(url, data)
     if (xhr.status === 200)
     {
         var data = xhr.responseText
-        console.log(data);
         return data;
     }
 }

@@ -10,7 +10,7 @@ console.log(matches);
 if (matches == "true")
 {
     // automatically redirect the user to landing site
-    window.location.href = "account.nsagroup14.com/landing.html";
+    window.location.href = "http://account.nsagroup14.com/landing.html";
     console.log("true");
 
 }
@@ -22,7 +22,7 @@ else if (matches == "")
     // change textbox text to not signed in
     document.getElementById("msgbox").value = "You are not signed in!";
     // Change button hyperlink to login page
-    document.getElementById("login").href = "login.nsagroup14.com";
+    document.getElementById("login").href = "http://login.nsagroup14.com";
 
     // Redirect to login page automatically (optional)
     // window.location.replace("login.nsagroup14.com");

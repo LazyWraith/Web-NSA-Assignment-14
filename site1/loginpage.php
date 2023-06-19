@@ -35,7 +35,7 @@ if (hash_equals($hashedpassword, $logininfos['password']))
     $insertquery = "UPDATE `login` SET `token` = '$token' WHERE `login`.`username` = '$username' ";
     mysqli_query($connection, $insertquery);
     //account.nsagroup14.com/landing.html?token=
-    echo "account.nsagroup14.com/index.html?token=" . $token;
+    echo "http://account.nsagroup14.com/index.html?token=" . $token;
 }
 
 // What happens when the password compared is returns false

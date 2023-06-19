@@ -8,7 +8,7 @@ console.log(matches);
 if (matches == "")
 {
     localStorage.setItem("token","");
-    window.location.href = "login.nsagroup14.com";
+    window.location.href = "http://login.nsagroup14.com";
     console.log("fail");
 }
 else console.log("pass");

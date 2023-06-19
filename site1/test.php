@@ -6,12 +6,8 @@ if (!$connection)
 {
     echo 'Connection error: ' . mysqli_connect_error();
 }
-// $username = mysqli_real_escape_string($connection, $_POST['username']);
-// $password = mysqli_real_escape_string($connection, $_POST['password']);
-
-// debugging code, remove later
-$username = "user1";
-$password = "user1";
+$username = mysqli_real_escape_string($connection, $_POST['username']);
+$password = mysqli_real_escape_string($connection, $_POST['password']);
 
 $hashedpassword = hash('sha256', $password);
 echo $hashedpassword;
@@ -22,7 +18,6 @@ $logininfos = mysqli_fetch_assoc($result);
 
 if(empty($logininfos))
 {
-    echo "empty result set!";
     exit();
 }
 

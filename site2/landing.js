@@ -27,3 +27,9 @@ function postData(url, data)
         return data;
     }
 }
+
+// logout function removes token from localstorage
+function logout()
+{
+    localStorage.setItem("token","");
+}

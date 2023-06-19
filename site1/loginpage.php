@@ -41,7 +41,7 @@ if (hash_equals($hashedpassword, $logininfos['password']))
 // What happens when the password compared is returns false
 else
 {
-    echo ''
+    echo '';
 }
 
 

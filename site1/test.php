@@ -1,4 +1,4 @@
-<?php echo "Hello, World!";
+<?php
 
 $connection = mysqli_connect('localhost', 'user', 'PAFBAWUayq9U7oWz', 'nsa');
 
@@ -10,7 +10,6 @@ $username = mysqli_real_escape_string($connection, $_POST['username']);
 $password = mysqli_real_escape_string($connection, $_POST['password']);
 
 $hashedpassword = hash('sha256', $password);
-echo $hashedpassword;
 
 $sql = "SELECT password FROM login WHERE username = '$username'";
 $result = mysqli_query($connection, $sql);

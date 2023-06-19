@@ -32,4 +32,5 @@ function postData(url, data)
 function logout()
 {
     localStorage.setItem("token","");
+    window.location.href = "http://login.nsagroup14.com";
 }

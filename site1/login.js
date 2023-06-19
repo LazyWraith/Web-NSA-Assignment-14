@@ -13,7 +13,7 @@ function login()
     //Account no have (Currently on placeholder)
     if (matches == '')
     {
-        console.log("account no have");
+        // console.log("account no have");
     }
 
     //Correct credentials: Returns link + token and redirect
@@ -71,8 +71,6 @@ function submitForm() {
         //         var token = data.token;
         //         var redirectURL = data.redirectURL;
 
-        //         // Store the token in cookies or local storage
-        //         // Here's an example using localStorage:
         //         localStorage.setItem('token', token);
 
         //         // Redirect to the specified URL

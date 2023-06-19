@@ -10,7 +10,7 @@ console.log(matches);
 if (matches == "true")
 {
     // automatically redirect the user to landing site
-    window.location = "account.nsagroup14.com/landing.html";
+    window.location.href = "account.nsagroup14.com/landing.html";
     console.log("true");
 
 }

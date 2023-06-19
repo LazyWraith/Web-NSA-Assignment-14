@@ -19,7 +19,7 @@ function login()
     //Correct credentials: Returns link + token and redirect
     else
     {
-        window.location = matches;
+        window.location.href = matches;
     }
 }
 
